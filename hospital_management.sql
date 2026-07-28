@@ -41,3 +41,5 @@ create index idx_triage_clinician on triage_system(clinician_id);
 create index idx_audit_session on audit_logs(session_id);
 
 insert ignore into roles (id, name) values (1, 'PATIENT'), (2, 'CLINICIAN');
+
+//may or may not be used
