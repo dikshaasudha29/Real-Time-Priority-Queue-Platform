@@ -1,7 +1,5 @@
 from fastapi import APIRouter
-
 from app.dependencies import SettingsDep
-
 router = APIRouter(tags=["health"])
 
 
