@@ -21,3 +21,18 @@ customer support line with different seed data and business rules — not a
 different architecture. Where this document or the code says "TriageFlow,"
 it refers to this specific demonstration; where it describes the platform's
 architecture, that description is intended to remain generic.
+
+## Backend Setup
+
+```bash
+cd backend
+python3 -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+cp .env.example .env
+uvicorn app.main:app --reload
+```
+
+Then verify:
+- `http://localhost:8000/health` — should return a JSON status payload.
+- `http://localhost:8000/docs` — Swagger UI, showing the `/health` route.
