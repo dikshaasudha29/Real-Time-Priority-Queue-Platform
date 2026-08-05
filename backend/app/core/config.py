@@ -6,6 +6,7 @@ from sqlalchemy.engine import URL
 
 class Settings(BaseSettings):
 
+
     # --- Application metadata ---
     APP_NAME: str = "TriageFlow"
     APP_VERSION: str = "0.1.0"
