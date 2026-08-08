@@ -18,3 +18,5 @@ SessionLocal: sessionmaker[Session] = sessionmaker(
     autocommit=False,
     future=True,
 )
+
+
